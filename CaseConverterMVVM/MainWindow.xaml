@@ -3,10 +3,17 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Views="clr-namespace:CaseConverterMVVM.Views"
+        xmlns:ViewModels="clr-namespace:CaseConverterMVVM.ViewModels"
         xmlns:local="clr-namespace:CaseConverterMVVM"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        ResizeMode="NoResize"
+        Title="Case Converter" Height="208.209" Width="804.03">
+
+    <Window.DataContext>
+        <ViewModels:ConverterViewModel/>
+    </Window.DataContext>
+
+    <Views:MainControl/>
+
 </Window>
